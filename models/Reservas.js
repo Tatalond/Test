@@ -1,11 +1,11 @@
 import mongoose from "mongoose";
-const userSchema = mongoose.Schema({
-  nombreUsuario:{
+const reservaSchema = mongoose.Schema({
+  descripcion:{
     type: String,
     required: true,
     trim: true
   },
-  celularUsuario: {
+  valorReserva: {
     type: Number,
     required: true,
     trim: true

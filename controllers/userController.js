@@ -45,7 +45,6 @@ const editar = async (req, res) => {
 
   //Validar si existe el registro 
   const usuario = await Usuario.findById(id);
-  console.log(usuario);
 
   if (!usuario) {
     const error = new error("Registro no encontrado");
@@ -53,7 +52,7 @@ const editar = async (req, res) => {
   }
 
   //Capturar los datos del formulario
-  usuario.nombresUsuario = req.body.nombresUsuario || usuario.nombresUsuario;
+  usuario.nombreUsuario = req.body.nombreUsuario || usuario.nombreUsuario;
   usuario.celularUsuario = req.body.celularUsuario || usuario.celularUsuario;
   
   try {
@@ -68,10 +67,10 @@ const editar = async (req, res) => {
 
 const listarUno = async (req, res) =>{
   //recibir los parametros por la url
-  const{ id} = req.params;
+  const {id} = req.params;
 
   // validar si existe registro 
-  const usuario = await usuario.findById(id);
+  const usuario = await Usuario.findById(id);
 
   if (!usuario) {
     const error = new error("Registro no encontrado");
