@@ -28,7 +28,7 @@ _Para la ejecución de las pruebas, es importante hacerlo por archivos a través
 
 ### Y las pruebas de estilo de codificación ⌨️
 
-_Estas pruebas permiten validar que el CRUD en la API se realice de manera adecuada_
+_Estas pruebas permiten validar que el CRUD en la API se realice de manera adecuada._
 
 ```
     describe('GET /api/users', ()=>{
