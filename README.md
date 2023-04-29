@@ -57,8 +57,6 @@ _Estas pruebas permiten validar que el CRUD en la API se realice de manera adecu
 
 ## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
 * [Node.js](https://nodejs.org/en) 
 * [MongoDB](https://www.mongodb.com/es)
 * [Express](https://expressjs.com/)
